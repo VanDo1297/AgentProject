@@ -1,0 +1,8 @@
+.home{
+    padding-bottom: 64px;
+}
+@media screen and (max-width: 768px) {
+    .home__banner{
+        flex-direction: column !important;
+    }
+}

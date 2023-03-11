@@ -1,0 +1,79 @@
+.record__exercise{
+    margin-top: 56px;
+    background-color: var(--dark-500-color);
+    padding: 16px 24px;
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 3px;
+        background: #777777;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #FFCC21; 
+        border-radius: 3px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #777777; 
+    }
+
+    >.record__exercise--header{
+        >.record-section-title{
+            margin-right: 25px;
+        }
+    } 
+    
+    >.record__exercise--list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        margin-top: 5px;
+        max-height: 200px;
+        padding-right: 20px;
+        overflow-y: auto;
+
+        >.record__exercise--item{
+            color: white;
+            font-weight: 400;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #777777;
+            padding-top: 8px;
+            >.exercise__item--infor{
+                >.exercise__item--dot{
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 5px;
+                    margin-right: 8px;
+                }
+                >.exercise__name{
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: 0.075px;
+                }
+                >.exercise__time{
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.09px;
+                    color: var(--primary-color);
+                    margin-left: auto;
+                }
+            }
+            >.exercise__item--value{
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.075px;
+                color: var(--primary-color);
+                margin-left: 14px;
+            }
+        }
+    }
+}

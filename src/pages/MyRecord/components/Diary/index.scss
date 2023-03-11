@@ -1,0 +1,59 @@
+.record__diary{
+    margin-top: 56px;
+    >.record__button--diary{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    >.record-section-title{
+        color: var(--dark-500-color);
+        font-size: 22px;
+        line-height: 27px;
+    }
+    >.record__diary--list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 12px;
+        row-gap: 12px;
+        margin-top: 5px;
+        >.record__diary--item{
+            font-weight: 400;
+            background: #FFFFFF;
+            border: 2px solid #707070;
+            padding: 16px;
+            color: #414141;
+            >.diary__item--date{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.09px;
+            }
+
+            >.diary__item--time{
+                @extend .diary__item--date;
+                margin-top: 5px;
+            }
+
+            >.diary__item--name{
+                margin-top: 8px;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 17px;
+                letter-spacing: 0.06px;
+            }
+            >.diary__item--note{
+                @extend .diary__item--name;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .record__diary{
+        .record__diary--list{
+            grid-template-columns: 1fr 1fr; 
+        }
+    }
+}

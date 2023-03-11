@@ -1,0 +1,44 @@
+@import './variable.scss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './common.scss';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    margin-bottom: 0 !important;
+}
+
+ul{
+    list-style: none;
+    padding-bottom: unset;
+    margin-bottom: unset;
+}
+a{
+    text-decoration: none;
+}
+img,video{
+    max-width: 100%;
+    height: auto;
+}
+
+button,input{
+    border: none !important;
+}
+
+button{
+    cursor: pointer;
+    outline: none !important;
+}
+
+input{
+    outline: none !important;
+}

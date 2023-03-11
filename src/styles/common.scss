@@ -1,0 +1,61 @@
+
+.hexagon-bg {
+    width: 130px;
+    height: 115px;
+    background: linear-gradient(155.89deg, #FFCC21 8.26%, #FF963C 91.18%);
+    position: relative;
+    transform: rotate(270deg);
+    >div{
+        &:first-child{
+            &::before{
+                width: 60px;
+                height: 60px;
+                content: "";
+                position: absolute;
+                top: -1px;
+                transform: rotate(90deg);
+                left: 71px;
+                border-top: 30px solid white;
+                border-right: 60px solid transparent;
+            }
+    
+            &::after{
+                width: 60px;
+                height: 60px;
+                content: "";
+                position: absolute;
+                top: 58px;
+                transform: rotate(90deg);
+                left: 71px;
+                border-top: 30px solid white;
+                border-left: 60px solid transparent;
+            }
+        }
+    
+        &:last-child{
+            &::before{
+                width: 60px;
+                height: 60px;
+                content: "";
+                position: absolute;
+                top: -1px;
+                transform: rotate(90deg);
+                left: -1px;
+                border-bottom: 30px solid white;
+                border-right: 60px solid transparent;
+            }
+    
+            &::after{
+                width: 60px;
+                height: 60px;
+                content: "";
+                position: absolute;
+                top: 58px;
+                transform: rotate(90deg);
+                left: -1px;
+                border-bottom: 30px solid white;
+                border-left: 60px solid transparent;
+            }
+        }
+    }
+}

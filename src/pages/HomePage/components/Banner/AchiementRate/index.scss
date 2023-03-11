@@ -1,0 +1,53 @@
+.home__banner--achievement-rate{
+    width: 40%;
+    background-image: url('../../../../../assets/photo/d01.jpg');
+    background-position: center;
+    
+    position: relative;
+    >.overlay{
+        background: linear-gradient(225deg, #FFCC21 0%, #FF963C 100%);
+        mix-blend-mode: soft-light;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    >.percent{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >.percent-value-circle{
+            background-image: url('../../../../../assets/home/archivement-percent.png');
+            width: 180px;
+            height: 180px;
+            position: absolute;
+           
+        }
+        >.percent-value{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 6px #FCA500;
+            span{
+                font-size: 18px;
+                line-height: 22px;
+                text-shadow: 0px 0px 6px #FC7400;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__banner--achievement-rate{
+        width: 100%;
+        height: 300px;
+    }
+}

@@ -1,0 +1,41 @@
+.record__chart{
+    margin-top: 56px;
+    margin-top: 56px;
+    background-color: var(--dark-500-color);
+    padding: 16px 24px;
+    >.record__chart--header{
+        >.record-section-title{
+            margin-right: 25px;
+        }
+    }
+    >.chart-component{
+        background-color: transparent;
+        margin-top: 30px;
+        >canvas{
+            max-height: 220px;
+        }
+    }
+
+    >.record__chart--filters{
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+        >.chart__filter--item{
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.075px;
+            color: #FFCC21;
+            background-color: white;
+            padding: 0px 20px;
+            border-radius: 11px;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        >.chart__filter--item-active{
+            color: white;
+            background-color: #FFCC21;
+        }
+    }
+}
