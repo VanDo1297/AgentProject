@@ -19,7 +19,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-To install all package using on projects. Then 
+To install all package using on projects. Then run:
 
 ### `npm start`
 
